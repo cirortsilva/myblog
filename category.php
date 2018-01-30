@@ -38,8 +38,8 @@ $posts = get_posts(null, $_GET['id']);
 
 						<div class="post-functions">
 							<ul>
-								<li><a href="delete_post.php?id=<?php echo $post["post_id"]; ?>"> Apagar essa publicação</a></li>
-								<li><a href="edit_post.php?id=<?php echo $post['post_id']; ?>"> Editar essa publicação</a></li>
+								<li><a href="delete_post.php?id=<?php echo $post["post_id"]; ?>"> Apagar</a></li>
+								<li><a href="edit_post.php?id=<?php echo $post['post_id']; ?>"> Editar</a></li>
 							</ul>
 						</div>
 						<br />
