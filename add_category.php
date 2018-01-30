@@ -71,14 +71,3 @@ if ( isset($_POST['name']) ) {
 </div>
 </body>
 <html>
-
-<!--
-<div class="control-group error">
-  <label class="control-label" for="inputError">Name</label>
-  <div class="controls">
-    <input type="text" name="name" id="inputError">
-    
-  </div>
-  <input type="submit" value="Add Category" class="btn btn-success">
-</div>
--->
