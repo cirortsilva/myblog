@@ -11,7 +11,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Table structure for table `categories`
+-- Criação da tabela 'categories'
 --
 
 CREATE TABLE `categories` (
@@ -22,14 +22,14 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
--- Dumping data for table `categories`
+-- Valores recebidos pela tabela 'categories'
 --
 
 INSERT INTO `categories` (`id`, `name`) VALUES
 
 
 --
--- Table structure for table `posts`
+-- Criação da tabela 'posts'
 --
 
 CREATE TABLE `posts` (
@@ -42,7 +42,7 @@ CREATE TABLE `posts` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
 
 --
--- Dumping data for table `posts`
+-- Valores recebidos pela tabela 'posts'
 --
 
 INSERT INTO `posts` (`id`, `cat_id`, `title`, `contents`, `date_posted`) VALUES
