@@ -31,13 +31,14 @@ if ( isset($_POST['name']) ) {
 	<?php include "includes/_head.php" ?>
 </head>
 <body>
+<?php include "includes/_nav.php" ?>
 <div class="container">
 	<div class="row">
 		<div class="span6 offset3">
-			<h1>Add Categoria</h1>
-				<br>
-			<?php include "includes/_nav.php" ?>
-
+		<br>
+			<h1>Adicionar Categorias:</h1>
+				
+			
 				<?php
 				if ( isset($errors) && ! empty($errors) ) {
 					echo '<div class="alert alert-block"><button type="button" class="close" data-dismiss="alert">&times;</button><ul><li>', implode('<li></li>', $errors), '</li></ul></div>';
@@ -54,11 +55,11 @@ if ( isset($_POST['name']) ) {
 							 	echo " <span class='help-inline'><i class='icon-exclamation'>&nbsp;</i>${error}</span>";
 							 }
 						?>
-						<?php 
+						<!--<?php 
 							if ( ! isset($error) ) {
 								echo "<span class='help-inline'>${success}</span>";
 							}
-						?>
+						?>-->
 					<br>
 					<br>	
 					<div>
@@ -71,3 +72,4 @@ if ( isset($_POST['name']) ) {
 </div>
 </body>
 <html>
+
