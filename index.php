@@ -18,17 +18,25 @@ $posts = get_posts(((isset($_GET['id'])) ? $_GET['id'] : null));
 </head>
 
 <body>
+<style>
 
-	<section class="container1">
+h1 {
+	font-family: Pacifico, serif;
+
+}
+</style>
+	<!--<section class="container">-->
 		
 				<?php include "includes/_nav.php" ?>
 				
-				<h1>Bem Vindo ao seu Blog</h1>
-</div>
+
+<!--</div>-->
 <div class="container">
+	<h1>Cotidiano:</h1>
+				<hr>
 				<?php
 				foreach ( $posts as $post ) {
-		//echo json_encode($post);
+		
 					if ( ! category_exists('name', $post ['name'] ) ){
 						$post['name'] = 'Uncategorised';
 					}
@@ -43,8 +51,8 @@ $posts = get_posts(((isset($_GET['id'])) ? $_GET['id'] : null));
 
 						<div class="post-functions">
 							<ul>
-								<li><a href="delete_post.php?id=<?php echo $post["post_id"]; ?>"> Apagar essa publicação </a></li>
-								<li><a href="edit_post.php?id=<?php echo $post['post_id']; ?>"> Editar essa publicação </a></li>
+								<li><a href="delete_post.php?id=<?php echo $post["post_id"]; ?>"> Apagar </a></li>
+								<li><a href="edit_post.php?id=<?php echo $post['post_id']; ?>"> Editar </a></li>
 							</ul>
 						</div>
 						<br />

@@ -24,7 +24,7 @@
 
 		if ( empty($errors) ) {
 			edit_post($_GET['id'], $title, $contents, $_POST['category']);
-			#echo json_encode($post);
+			
 			header('location: index.php?id=' . $post[0]['post_id']);
 			
 			die();
@@ -35,16 +35,18 @@
 	<html lang="pt-br">
 
 <head>
-	<title>Editar Publicação</title>
+	<title>MyBlog:</title>
 	<?php include "includes/_head.php" ?>
 </head>
 <body>
+<?php include "includes/_nav.php" ?>
 	<div class="container">
 		<div class="row">
 		<div class="span6 offset3">
-			<h1>Edit Post</h1>
+		<br>
+			<h1>Editar Publicação</h1>
 				<hr>
-				<?php include "includes/_nav.php" ?>
+				
 				<?php
 				if ( isset($errors) && ! empty($errors) ) {
 					echo '<div class="alert alert-block"><button type="button" class="close" data-dismiss="alert">&times;</button><ul><li>', implode('<li></li>', $errors), '</li></ul></div>';
