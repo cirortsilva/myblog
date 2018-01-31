@@ -38,12 +38,14 @@
 </head>
 
 <body>
+<?php include "includes/_nav.php" ?>
 <div class="container">
 	<div class="row">
 		<div class="span6 offset3">
-			<h1>Add Publicação</h1>
+		<br>
+			<h1>Adicionar Publicação:</h1>
 				<hr>
-				<?php include "includes/_nav.php" ?>
+				
 				<?php
 				if ( isset($errors) && ! empty($errors) ) {
 					echo '<div class="alert alert-block"><button type="button" class="close" data-dismiss="alert">&times;</button><ul><li>', implode('<li></li>', $errors), '</li></ul></div>';
@@ -65,7 +67,7 @@
 								foreach ( get_categories() as $category) {
 									echo("<option value=\"" .  $category["id"] . "\">{$category['name']}</option>");
 								?>
-								<!--<option value="<?php echo $category['id']; ?>"> <?php echo $category['name']; ?> </option>-->
+								<option value="<?php echo $category['id']; ?>"> <?php echo $category['name']; ?> </option>
 							<?php 
 								}
 							?>
