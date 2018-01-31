@@ -7,6 +7,7 @@ input {
 
 h1 {
   text-align: center;
+
 }
 
 a {
@@ -14,9 +15,10 @@ a {
 }
 
 a:hover {
-  color: #ff9cce;
+  color: #ff0000;
   text-decoration: none;
 }
+
 
 .alert-block li {
   list-style: none;
@@ -44,7 +46,8 @@ a:hover {
 }
 
 #nav-main {
-  background-color: #009688;
+  background-color: #000000;
+  height: 50px;
 }
 
 #nav-main > a {
@@ -52,6 +55,7 @@ a:hover {
   font-family: Pacifico, serif;
   font-size: 28px;
   color: #fff;
+
 }
 
 #nav-main ul {
